@@ -9,20 +9,20 @@ app.use("/public", express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
   const message = "Hello world";
-  res.render('show', {mes:message});
+  res.render('show', { mes: message });
 });
 
 app.get("/db", (req, res) => {
-    db.serialize( () => {
-        db.all("select id, 都道府県, 人口 from example;", (error, data) => {
-            if( error ) {
-                res.render('show', {mes:"エラーです"});
-            }
-            res.render('select', {data:data});
-        })
+  db.serialize(() => {
+    db.all("select id, 都道府県, 人口 from example;", (error, data) => {
+      if (error) {
+        res.render('show', { mes: "エラーです" });
+      }
+      res.render('select', { data: data });
     })
+  })
 });
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.status(404).send('ページが見つかりません');
 });
 

@@ -6,10 +6,10 @@ app.use("/public", express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
   const message = "Hello world";
-  res.render('show', {mes:message});
+  res.render('show', { mes: message });
 });
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.status(404).send('ページが見つかりません');
 });
 
