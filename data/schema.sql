@@ -29,5 +29,18 @@ create table artifact_main_stats (
   star4 real,
   star5 real
  );
-
-
+create table artifact_managers (
+  id integer primary key autoincrement,
+  name text,
+  score real,
+  artifact_id integer,
+  main_stat_id integer,
+  sub1_stat_id integer,  
+  sub2_stat_id integer,
+  sub3_stat_id integer,
+  sub4_stat_id integer,
+  sub1_value_number real,    
+  sub2_value_number real,
+  sub3_value_number real,
+  sub4_value_number real
+);
