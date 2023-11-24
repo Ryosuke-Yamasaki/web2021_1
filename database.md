@@ -57,14 +57,3 @@ name_en|text|attack_percent
 status_id|integer|1
 star4|numeric|46.6
 star5|numeric|46.6
-
-## artifact_sub_status
-カラム名|型|例
--|-|-
-id|integer|1
-status_id|integer|1
-quality|integer|5
-value_number1|numeric|3.9
-value_number2|numeric|3.5
-value_number3|numeric|3.1
-value_number4|numeric|2.7
