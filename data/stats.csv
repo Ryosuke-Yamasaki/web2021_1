@@ -3,6 +3,7 @@ id,name_jp,name_en
 103,HP%,hp_percent
 201,攻撃実数,attack_flat
 203,攻撃%,attack_percent
+301,防御実数,defense_flat
 303,防御%,defense_percent
 400,元素熟知,elemental_mastary
 500,元素チャージ効率,energy_recharge

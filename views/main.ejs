@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <%= mes %>
+  <% console.log(data) %>
+  <% data.map(d=>{ %>
+  <%= d.name %>
+  <% }) %>
+  <button onclick="location.href='../public/insert_artifact.html'">登録へ</button>
+</body>
+
+</html>
