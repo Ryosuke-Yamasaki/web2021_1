@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聖遺物登録</title>
+</head>
+
+<body>
+  <form action="/insert" method="post">
+    <div>
+      <label for="name">名前</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div>
+      <label for="set">セット名</label>
+      <select name="set" id="set">
+        <option value="401">旅人の心</option>
+        <option value="402">勇士の心</option>
+        <option value="403">守護の心</option>
+        <option value="404">奇跡</option>
+        <option value="405">狂戦士</option>
+        <option value="406">武人</option>
+        <option value="407">教官</option>
+        <option value="408">博徒</option>
+        <option value="409">亡命者</option>
+        <option value="410">学者</option>
+        <option value="501">氷風を彷徨う勇士</option>
+        <option value="502">雷を鎮める尊者</option>
+        <option value="503">烈火を渡る賢者</option>
+        <option value="504">愛される少女</option>
+        <option value="505">剣闘士のフィナーレ</option>
+        <option value="506">翠緑の影</option>
+        <option value="507">大地を流浪する楽団</option>
+        <option value="508">雷のような怒り</option>
+        <option value="509">燃え盛る炎の魔女</option>
+        <option value="510">旧貴族のしつけ</option>
+        <option value="511">血染めの騎士道</option>
+        <option value="512">悠久の磐岩</option>
+        <option value="513">逆飛びの流星</option>
+        <option value="514">沈淪の心</option>
+        <option value="515">千岩牢固</option>
+        <option value="516">蒼白の炎</option>
+        <option value="517">追憶のしめ縄</option>
+        <option value="518">絶縁の旗印</option>
+        <option value="519">華館夢醒形骸記</option>
+        <option value="520">海染硨磲</option>
+        <option value="521">辰砂往生録</option>
+        <option value="522">来歆の余響</option>
+        <option value="523">深林の記憶</option>
+        <option value="524">金メッキの夢</option>
+        <option value="525">砂上の楼閣の史話</option>
+        <option value="526">楽園の絶花</option>
+        <option value="527">水仙の夢</option>
+        <option value="528">花海甘露の光</option>
+        <option value="529">ファントムハンター</option>
+        <option value="530">黄金の劇団</option>
+      </select>
+    </div>
+    <div>
+      <label for="type">パーツ名</label>
+      <select name="type" id="type">
+        <option value="1">生の花</option>
+        <option value="2">死の羽</option>
+        <option value="3">時の砂</option>
+        <option value="4">空の杯</option>
+        <option value="5">理の冠</option>
+      </select>
+    </div>
+    <div>
+      <label for="main_stat">メインステータス</label>
+      <select name="main_stat" id="main_stat">
+        <option value="101">HP実数</option>
+        <option value="103">HP%</option>
+        <option value="201">攻撃実数</option>
+        <option value="203">攻撃%</option>
+        <option value="303">防御%</option>
+        <option value="400">元素熟知</option>
+        <option value="500">元素チャージ効率</option>
+        <option value="600">会心率</option>
+        <option value="700">会心ダメージ</option>
+        <option value="800">与える治療効果</option>
+        <option value="1251">炎元素ダメージ</option>
+        <option value="1252">水元素ダメージ</option>
+        <option value="1253">氷元素ダメージ</option>
+        <option value="1254">雷元素ダメージ</option>
+        <option value="1255">風元素ダメージ</option>
+        <option value="1256">岩元素ダメージ</option>
+        <option value="1257">草元素ダメージ</option>
+        <option value="1258">物理ダメージ</option>
+      </select>
+    </div>
+    <div>
+      <label for="sub1">サブステ1</label>
+      <select name="sub1" id="sub1">
+        <option value="101">HP実数</option>
+        <option value="103">HP%</option>
+        <option value="201">攻撃実数</option>
+        <option value="203">攻撃%</option>
+        <option value="301">防御実数</option>
+        <option value="303">防御%</option>
+        <option value="400">元素熟知</option>
+        <option value="500">元素チャージ効率</option>
+        <option value="600">会心率</option>
+        <option value="700">会心ダメージ</option>
+      </select>
+    </div>
+    <div>
+      <label for="sub2">サブステ2</label>
+      <select name="sub2" id="sub2">
+        <option value="101">HP実数</option>
+        <option value="103">HP%</option>
+        <option value="201">攻撃実数</option>
+        <option value="203">攻撃%</option>
+        <option value="301">防御実数</option>
+        <option value="303">防御%</option>
+        <option value="400">元素熟知</option>
+        <option value="500">元素チャージ効率</option>
+        <option value="600">会心率</option>
+        <option value="700">会心ダメージ</option>
+      </select>
+    </div>
+    <div>
+      <label for="sub3">サブステ3</label>
+      <select name="sub3" id="sub3">
+        <option value="101">HP実数</option>
+        <option value="103">HP%</option>
+        <option value="201">攻撃実数</option>
+        <option value="203">攻撃%</option>
+        <option value="301">防御実数</option>
+        <option value="303">防御%</option>
+        <option value="400">元素熟知</option>
+        <option value="500">元素チャージ効率</option>
+        <option value="600">会心率</option>
+        <option value="700">会心ダメージ</option>
+      </select>
+    </div>
+    <div>
+      <label for="sub4">サブステ4</label>
+      <select name="sub4" id="sub4">
+        <option value="101">HP実数</option>
+        <option value="103">HP%</option>
+        <option value="201">攻撃実数</option>
+        <option value="203">攻撃%</option>
+        <option value="301">防御実数</option>
+        <option value="303">防御%</option>
+        <option value="400">元素熟知</option>
+        <option value="500">元素チャージ効率</option>
+        <option value="600">会心率</option>
+        <option value="700">会心ダメージ</option>
+      </select>
+    </div>
+    <input type="submit" value="送信">
+  </form>
+</body>
+
+</html>
