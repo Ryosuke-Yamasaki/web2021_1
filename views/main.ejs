@@ -10,9 +10,51 @@
 <body>
   <%= mes %>
   <% console.log(data) %>
-  <% data.map(d=>{ %>
-  <%= d.name %>
-  <% }) %>
+  <% for (const d of data) { %>
+  <table border="#000000">
+    <thead>
+      <tr>
+        <th colspan="2"><%= d.name %>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= d.typeName %></td>
+        <td><%= d.setName %></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td colspan="2"><%= d.mainName %></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td><%= d.subName1 %></td>
+        <td><%= d.subNum1 %></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td><%= d.subName2 %></td>
+        <td><%= d.subNum2 %></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td><%= d.subName3 %></td>
+        <td><%= d.subNum3 %></td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td><%= d.subName4 %></td>
+        <td><%= d.subNum4 %></td>
+      </tr>
+    </tbody>
+  </table>
+  <% } %>
   <button onclick="location.href='../public/insert_artifact.html'">登録へ</button>
 </body>
 

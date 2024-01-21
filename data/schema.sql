@@ -12,8 +12,7 @@ create table
     artifact_set_id integer,
     name text,
     description text,
-    star integer,
-    url text
+    star integer
   );
 
 create table
